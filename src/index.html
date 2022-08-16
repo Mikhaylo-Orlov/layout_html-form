@@ -14,8 +14,9 @@
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post" autocomplete="off">
-      <fieldset>
+      <fieldset class="field">
         <legend>Personal information</legend>
+        <div class="inp">
         <label for="sname">Surname:</label>
          <input 
            type="text" 
@@ -23,6 +24,8 @@
            name="sname"
            required
          >
+        </div>
+        <div class="inp">
         <label for="fname">Name:</label>
          <input 
            type="text" 
@@ -30,6 +33,8 @@
            name="fname"
            required
          >
+        </div>
+        <div class="inp">
         <label for="age">How old are you?</label>
          <input 
            type="number" 
@@ -39,21 +44,27 @@
            max="100" 
            value="12"
          >
+        </div>
+        <div class="inp">
         <label for="date">Full date of birth:</label>
          <input 
            type="date" 
            id="date" 
            name="date"
            >
-        <label for="agree">I accept the term of the agreement</label>
+         </div>
+         <div class="inp">
+         <label for="agree">I accept the term of the agreement</label>
          <input 
            type="checkbox" 
            id="agree" 
            name="agree"
          >
+         </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="field">
         <legend>Registration</legend>
+        <div class="inp">
         <label for="email">E-mail:</label>
          <input 
            type="email" 
@@ -61,6 +72,8 @@
            name="email" 
            placeholder="email@example.com"
          >
+        </div>
+        <div class="inp">
         <label for="psw">Password:</label>
          <input 
            type="password" 
@@ -69,40 +82,50 @@
            minlength="8"
            maxlength="24"
          >
+        </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="field">
         <legend>An interesting fact about you!</legend>
-         <label for="yes">Do you love cats?</label>
+        <div class="inp">
+        <label for="yes">Do you love cats?</label>
           <input 
             type="radio" 
             id="yes" 
             name="yes"
           >
-          <label for="no">Yes</label>
+          <label for="yes">Yes</label>
           <input 
             type="radio" 
             id="no" 
             name="no"
           >
           <label for="no">No</label>
-          <label for="clr">What is your favorite color?</label>
+        </div>
+        <div class="inp"> 
+        <label for="clr">What is your favorite color?</label>
           <input 
             type="color" 
             id="clr" 
             name="clr"
           >
-          <label for="tm">What time do you go to bed?</label>
+        </div>
+        <div class="inp">
+          <label for="tm"></label>What time do you go to bed?</label>
           <input 
             type="time" 
             id="tm" 
             name="tm"
           >
+        </div>
+        <div class="inp">
           <label for="cars">What are your favorite brand of cars?</label>
           <select id="cars" name="cars" multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
+        </div>
+        <div class="inp">
           <label for="rt">How do you rate our work?</label>
           <input 
             type="range" 
@@ -112,16 +135,21 @@
             min="0"
             max="10"
           >
+        </div>
       </fieldset>
-      <fieldset>
+      <fieldset class="field">
         <legend>Additional info:</legend>
+        <div class="inp">
         <label for="cm">Comments:</label>
         <textarea name="message" rows="2" cols="30"></textarea>
+        </div>
+        <div class="inp">
         <label for="rec">Would you recommend us?</label>
           <select id="rec" name="rec">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
+        </div>
       </fieldset>
       <input type="submit" value="Submit">
     </form>
