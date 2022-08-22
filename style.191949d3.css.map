@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,KACE,mBACF,CAEA,OACE,kBACF,CAEA,IACE,gBACF","file":"style.191949d3.css","sourceRoot":"..\\src","sourcesContent":[".inp {\n  padding-bottom: 10px;\n}\n\n.field {\n  margin-bottom: 20px;\n}\n\n.ls {\n  padding-bottom: 0;\n}\n"]}
